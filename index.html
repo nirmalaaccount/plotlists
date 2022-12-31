@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>plot listingt</title>
+----------css styles---------------------
+  <link rel="stylesheet" href="./index.css">
+-----------------bootstrap styles---------------
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+---------------javascript-------------------
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+--------------fontawesome------------------
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+
+  <div class="nav-session">
+    <nav class="navbar navbar-expand-lg navbar fixed-top bg-dark">
+      <a class="navbar-brand" href="#">PlotList</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class=" nav-item collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="navbar-nav ml-auto">
+          <a class=" nav-item nav-link active" href="#">Home </a>
+          <a class=" nav-item nav-link " href="#popular-categories">CATEGORY</a>
+          <a class=" nav-item nav-link" href="#testimonial">LISTING</a>
+          <a class="nav-item nav-link" href="#footer">CONTACT US</a>
+          <div class="plus">
+            <button class="btn btn-sm bg-light" type="button">+ Add Listing</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="main-session">
+    <h3>over 36,500+ ACTIVE LISTINGS</h3>
+    <h1>Find Nearby Place & Things</h1>
+  </div>
+  <div class="col-lg-12">
+    <form id="search-form" method="submit" role="search" action="#">
+      <div class="row">
+        <div class="col-lg-3 align-self-center">
+          <fieldset>
+            <select class="form-select" aria-label="Area" onchange="this.form.click()">
+              <option selected>All Areas</option>
+              <option value="New Village">New Village</option>
+              <option value="Old Town">Old Town</option>
+              <option value="Modern City">Modern City</option>
+            </select>
+          </fieldset>
+        </div>
+        <div class="col-lg-3 align-self-center">
+          <fieldset>
+            <input id="searchtext" type="address" class="searchText" placeholder="Enter a location" autocomplete="on"
+              required>
+          </fieldset>
+        </div>
+        <div class="col-lg-3 align-self-center">
+          <fieldset>
+            <select class="form-select" aria-label="Default select example" onchange="this.form.click()">
+              <option selected>Price Range</option>
+              <option value="$100 - $250">$100 - $250</option>
+              <option value="$250 - $500">$250 - $500</option>
+              <option value="$500 - $1000">$500 - $1,000</option>
+              <option value="$1000+">$1,000 or more</option>
+            </select>
+          </fieldset>
+        </div>
+        <div class="col-lg-3">
+          <fieldset>
+            <button class="main-button"> Search Now</button>
+          </fieldset>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class=" icon col-lg-10 offset-lg-1">
+    <ul class="categories">
+      <li><a href="#Apartments"><span class="icon"><img src="images/search-icon-01.png" alt="Home"></span>
+          Apartments</a></li>
+      <li><a href="#Food & Life"><span class="icon"><img src="images/search-icon-02.png" alt="Food"></span> Food &amp;
+          Life</a></li>
+      <li><a href="#Cars"><span class="icon"><img src="images/search-icon-03.png" alt="Vehicle"></span> Cars</a></li>
+      <li><a href="#Shopping"><span class="icon"><img src="images/search-icon-04.png" alt="Shopping"></span>
+          Shopping</a></li>
+      <li><a href="#Traveling"><span class="icon"><img src="images/search-icon-05.png" alt="Travel"></span>
+          Traveling</a></li>
+    </ul>
+  </div>
+  </div>
+  <div class="popular-categories" id="popular-categories">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Popular Categories</h2>
+            <h6>Check Them Out</h6>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="menu">
+                    <div class="first-thumb active">
+                      <div class="thumb" id="Apartments">
+                        <span class="icon"><img src="images/search-icon-01.png" alt=""></span>
+                        Apartments
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <span class="icon"><img src="images/search-icon-02.png" alt=""></span>
+                        Food &amp; Life
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <span class="icon"><img src="images/search-icon-03.png" alt=""></span>
+                        Cars
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <span class="icon"><img src="images/search-icon-04.png" alt=""></span>
+                        Shopping
+                      </div>
+                    </div>
+                    <div class="last-thumb">
+                      <div class="thumb">
+                        <span class="icon"><img src="images/search-icon-05.png" alt=""></span>
+                        Traveling
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-9 align-self-center">
+                  <ul class="nacc">
+                    <div>
+                      <div class="thumb" id="Apartments">
+                        <div class="row">
+                          <div class="col-lg-5 align-self-center">
+                            <div class="left-text">
+                              <h4>One Of The Most Trending Stuffs Right Now!</h4>
+                              <p>Plot Listing is a responsive Bootstrap 5 website template that included 4 different
+                                HTML pages. This template is provided by TemplateMo website. You can apply this layout
+                                for your static or dynamic CMS websites.</p>
+                              <div class="main-white-button"><a href="#Apartments">Discover More</a></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-7 align-self-center">
+                            <div class="right-image">
+                              <img src="images/tabs-image-01.jpg" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <li>
+                      <div>
+                        <div class="thumb" id="Food & Life">
+                          <div class="row" id="Food & Life">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Food and Lifestyle category is here</h4>
+                                <p>You can feel free to download, edit and apply this template for your website. Please
+                                  tell your friends about TemplateMo website.</p>
+                                <div class="main-white-button"><a href="#Food & Life"> Explore More</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="images/tabs-image-02.jpg" alt="Foods on the table">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb" id="Cars">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Best car rentals for your trips!</h4>
+                                <p>Did you know? You can get the best free HTML templates on Too CSS blog. Visit the
+                                  blog pages and explore fresh and latest website templates.</p>
+                                <div class="main-white-button"><a href="#Cars">More Listing</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="images/tabs-image-03.jpg" alt="cars in the city">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb" id="Shopping">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Shopping List: Images from Unsplash</h4>
+                                <p>Image credits go to Unsplash website that provides free stock photos for anyone.
+                                  Images used in this Plot Listing template are from Unsplash.</p>
+                                <div class="main-white-button"><a href="#Shopping"> Discover More</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="images/tabs-image-04.jpg" alt="Shopping Girl">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb" id="Traveling">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Information and Safety Tips for Traveling</h4>
+                                <p>You are allowed to use this template for your commercial websites. You are NOT
+                                  allowed to redistribute this template ZIP file on any Free CSS collection websites.
+                                </p>
+                                <div class="main-white-button"><a rel="nofollow" href="#Traveling"> Read More</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="images/tabs-image-05.jpg" alt="Traveling Beach">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="listing-session" id="testimonial">
+    <div class="listing">
+      <h1>Recent Listing</h1>
+      <h3>CHECK THEM OUT</h3>
+    </div class="testinominal-carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-item active">
+          <img class="imges" src="./images/listing-01.jpg">
+        </div>
+        <div class="carousel-item" data-interval="10000">
+          <img class="imges" src="./images/listing-04.jpg">
+        </div>
+        <div class="carousel-item" data-interval="10000">
+          <img class="imges" src="./images/listing-03.jpg" >
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+</body>
+<footer class="last-session" id="footer">
+  <div>
+    <h1>Contact Us</h1>
+    <a href="https://www.facbook.com" target="_blank" class="btn btn-sm"><i
+        class="social-icon fab fa-facebook-f"></i></a>
+    <a href="https://www.twitter.com" target="_blank" class="btn btn-sm"><i class="social-icon fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com" target="_blank" class="btn btn-sm"><i
+        class="social-icon fab fa-instagram"></i></a>
+    <a href="https://www.email.com" target="_blank" class="btn btn-sm"><i class="social-icon fas fa-envelope"></i></a>
+    <p>© Copyright 2022 By Nirmala</p>
+  </div>
+</footer>
+
+</html>
